@@ -16,12 +16,17 @@ const Nav = () => (
                         <a className="nav-link js-scroll-trigger" href="#about">About</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#features">Features</a>
+                        <a className="nav-link js-scroll-trigger" href="#news">News</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link js-scroll-trigger" href="#shop">Shop</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
                     </li>
-                    
                 </ul>
             </div>
         </div>
