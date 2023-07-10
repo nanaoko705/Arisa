@@ -13,7 +13,7 @@ const Nav = (props) => (
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#about">{props.memu[0]}</a>
+                        <a className="nav-link js-scroll-trigger" href="#about">{props.menu[0]}</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link js-scroll-trigger" href="#news">{props.menu[1]}</a>
