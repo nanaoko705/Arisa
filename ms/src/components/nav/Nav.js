@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Nav = () => (
+const Nav = (props) => (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div className="container">
             <a className="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
@@ -13,19 +13,19 @@ const Nav = () => (
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#about">About</a>
+                        <a className="nav-link js-scroll-trigger" href="#about">{props.memu[0]}</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#news">News</a>
+                        <a className="nav-link js-scroll-trigger" href="#news">{props.menu[1]}</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
+                        <a className="nav-link js-scroll-trigger" href="#gallery">{props.menu[2]}</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#shop">Shop</a>
+                        <a className="nav-link js-scroll-trigger" href="#shop">{props.menu[3]}</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                        <a className="nav-link js-scroll-trigger" href="#contact">{props.menu[4]}</a>
                     </li>
                 </ul>
             </div>
