@@ -33,4 +33,4 @@ const Nav = (props) => (
     </nav>
 )
 
-export default Nav; 
+export default Nav;
