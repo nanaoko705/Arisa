@@ -10,7 +10,7 @@ function App() {
   return (
     <Fragment>
       <Nav menu={menus} />
-      {/* <Masthead /> */}
+      <Masthead />
       <Footer/>
     </Fragment>
   );
