@@ -3605,7 +3605,7 @@ textarea.form-control-lg {
   border-top-right-radius: 0;
 }
 
-.nav {
+.Nav {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
@@ -3633,6 +3633,7 @@ textarea.form-control-lg {
     transition: none;
   }
 }
+
 .nav-link:hover, .nav-link:focus {
   color: var(--bs-nav-link-hover-color);
 }

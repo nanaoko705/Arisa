@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Shop = ({ name, position }) => (
     <div className="col-lg-4">
       <div className="team-member">
