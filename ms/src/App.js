@@ -25,6 +25,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/board" element={<BoardList/>}/>
       </Routes>
+      
       <Nav menu={menus} />
       <Masthead />
       <About />
