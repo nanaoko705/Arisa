@@ -11,7 +11,7 @@ export default class Masthead extends Component {
                             <h2 className="section-heading">여기서 사진 보여주기</h2>
                             <p>대충 설명, 버튼 아직, 이미지 문제 있음</p>
                             <div className="badges">
-                                <a className="badge-link" href="#"><img src="img/header-bg.jpg"></img></a>
+                                <a className="badge-link" href="#"><img src="assets/img/header-bg.jpg"></img></a>
                             </div>
                         </div>
                     </div>

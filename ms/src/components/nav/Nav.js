@@ -1,4 +1,5 @@
 import React from 'react';
+import './Nav.scss';
 
 const Nav = (props) => (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">

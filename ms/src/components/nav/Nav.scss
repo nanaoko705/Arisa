@@ -1,0 +1,21 @@
+// nav.scss
+
+// Import Bootstrap SCSS variables if needed
+//@import '~bootstrap/scss/variables';
+
+// Define custom styles for Nav component
+.navbar {
+  background-color: #333; // Customize the background color
+}
+
+.navbar-brand {
+  font-size: 1.5rem; // Customize the font size
+  // Add more custom styles as needed
+}
+
+.navbar-nav .nav-link {
+  color: #fff; // Customize the link color
+  // Add more custom styles as needed
+}
+
+// Add more custom styles as needed
