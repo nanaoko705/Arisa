@@ -5,6 +5,8 @@ import Masthead from './components/masthead/Masthead';
 import Footer from './components/footer/Footer';
 import About from './components/about/About';
 import News from './components/news/News';
+import Shop from './components/shop/Shop';
+import Contact from './components/contact/Contact';
 
 const menus = ['about', 'news', 'gallery', 'shop', 'contact'];
 
@@ -15,6 +17,8 @@ function App() {
       <Masthead />
       <About />
       <News />
+      <Shop />
+      <Contact />
       <Footer />
     </Fragment>
   );
