@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-bb78x$*3r3i5ltog0pr9iu^+kdf5kd^8(+&ewfw*a0e+j8-90d"
+SECRET_KEY = "django-insecure-$@&ol85j_$d+d=&%!3!3r@%m9e-l&&)d(9k7+x7-%#!ddkght)"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,14 +37,15 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'rest_framework',
-	'wnrf_app',
+    'rest_framework', 
+    'account',
+    'board'
 ]
 
+#추가한 부분
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         # 'rest_framework.permissions.IsAdminUser',
-        # admin 사용자일때만 접근 가능
     ],
     'PAGE_SIZE': 10
 }
@@ -103,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",},
 ]
 
-
+AUTH_USER_MODEL = 'account.User'
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
