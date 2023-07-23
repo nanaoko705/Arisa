@@ -1,5 +1,3 @@
-from django.shortcuts import render
-# Create your views here.
 from .models import Blog
 from .serializers import BlogSerializer
 from rest_framework import viewsets
