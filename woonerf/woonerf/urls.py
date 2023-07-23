@@ -5,6 +5,7 @@ from woonerf import urls
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("user/", include('account.urls')),  # Comma was missing here
-    path("blog/", include('board.urls')),
+    path("", include('board.urls')),
+    path('api-auth/', include('rest_framework.urls')),
 
 ]
