@@ -13,3 +13,5 @@ class Blog(models.Model):
     user = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)
     # 5. 본문
     body = models.TextField()
+    # 6. 이미지
+    image = models.ImageField(upload_to="%Y/%m/%d", blank=True, null=True)
