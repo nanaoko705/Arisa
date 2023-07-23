@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./RestAPI.css";
+
 
 function RestAPI() {
   const [text, setText] = useState([]);
 
   return (
     <>
-      <h1>REST API 연습</h1>
+      <h1>장고연결하기</h1>
       <div className="btn-primary">
         <button
           onClick={() => {
@@ -29,7 +29,7 @@ function RestAPI() {
         <button
           onClick={() => {
             axios
-              .get("http://127.0.0.1:8000/review/")
+              .get("http://127.0.0.1:8000/blog/")
               .then((response) => {
                 setText([...response.data]);
                 console.log(response.data);
@@ -52,7 +52,7 @@ function RestAPI() {
             <button
               className="btn-delete"
               onClick={() => {
-                axios.delete(`http://127.0.0.1:8000/review/${e.id}`);
+                axios.delete(`http://127.0.0.1:8000/blog/${e.id}`);
                 setText(text.filter((text) => text.id !== e.id));
               }}
             >
