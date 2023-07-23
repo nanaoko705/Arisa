@@ -1,14 +1,18 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import BoardList from "./BoardList";
 
-const Home = () => {
-    return (
-        <home>
-            <a href="/">홈</a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="/board">게시판</a>
-            <hr/>
-        </home>
-    );
-};
+class Home extends React.Component {
+    render() {
+        return (
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/board" element={<BoardList />} />
+                </Routes>
+            </BrowserRouter>
+        )
+    }
+}
 
 export default Home;

@@ -11,8 +11,6 @@ import Shop from './components/shop/Shop';
 import Contact from './components/contact/Contact';
 
 // 페이지 이동을 위함
-import {Route, Routes} from "react-router-dom";
-import BoardList from './components/routes/BoardList'; 
 import Home from './components/routes/Home';
 
 
@@ -20,12 +18,9 @@ const menus = ['about', 'news', 'gallery', 'shop', 'contact'];
 
 function App() {
   return (
-    <Fragment>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/board" element={<BoardList/>}/>
-      </Routes>
-      
+    <Fragment>  
+      <Home />
+
       <Nav menu={menus} />
       <Masthead />
       <About />
