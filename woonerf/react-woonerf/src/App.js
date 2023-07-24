@@ -1,12 +1,12 @@
 import "./App.css";
-import RestAPI from "./components/RestAPI.js";
+import BlogList from "./components/BlogList.js";
 import React from "react";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <RestAPI />
+        <BlogList />
       </header>
     </div>
   );

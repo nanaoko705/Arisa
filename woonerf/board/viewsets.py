@@ -10,7 +10,7 @@ blog_list = BlogViewSet.as_view({
 # Blog detail 보여주기 + 수정 + 삭제
 blog_detail = BlogViewSet.as_view({
     'get': 'retrieve',
-    'put': 'update',1
+    'put': 'update',
     'delete': 'destroy'
 })
 
