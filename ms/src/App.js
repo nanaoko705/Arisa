@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import './App.scss';
-import RestAPI from "./RestAPI.js";
 
 // 홈 화면의 구성들 -> 나중에 home으로 묶어서 분리할 필요가 있을 듯
 import Nav from './components/nav/Nav'
@@ -21,7 +20,7 @@ function App() {
   return (
     <Fragment>  
       {/* <Home /> */}
-      <RestAPI/>
+      {/* <RestAPI/> */}
 
       <Nav menu={menus} />
       <Masthead />
