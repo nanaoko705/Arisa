@@ -3,7 +3,7 @@ import axios from "axios";
 
 function BlogList() {
   const [text, setText] = useState([]);
-  const onClick = async () => {
+  const onClick_get = async () => {
     try {
       const response = await axios.get(
         "http://127.0.0.1:8000/blog/",
@@ -14,6 +14,7 @@ function BlogList() {
     }
   }
 
+  //포스트는 아직 제대로 동작 안함. -> 글 올리는 건 django admin에서 우리가 노가다로 올리는 걸로
   const onClick_post = async () => {
     try {
       const response = await axios.post(
@@ -27,11 +28,16 @@ function BlogList() {
       console.log(error)
     }
   }
+
   return (
     <>
       <button onClick={onClick_post}>post</button>
-      <button onClick={onClick}>불러오기</button>
-      {text && <textarea rows={15} value={JSON.stringify(text, null, 5)} readOnly={true}/>}
+      <button onClick={onClick_get}>불러오기</button>
+      {text && <textarea rows={15} value={JSON.stringify(text, null, 2)} readOnly={true}/>}
+
+      <h1>list</h1>
+      {text && <img src="http://127.0.0.1:8000/media/2023/07/24/header-bg.png" alt="" />}
+
     </>
   );
 }
