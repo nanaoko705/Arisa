@@ -69,7 +69,9 @@ ROOT_URLCONF = "woonerf.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            os.path.join(BASE_DIR, 'react-woonerf/build'), # 경로 변경
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
