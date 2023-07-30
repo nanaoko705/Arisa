@@ -36,7 +36,7 @@ function BlogList() {
       {text && <textarea rows={15} value={JSON.stringify(text, null, 2)} readOnly={true}/>}
 
       <h1>list</h1>
-      {text && <img src="http://127.0.0.1:8000/media/2023/07/24/header-bg.png" alt="" />}
+      {text && <img src="http://127.0.0.1:8000/media/2023/07/23/header-bg.jpg" alt="" />}
 
     </>
   );
