@@ -1,21 +1,14 @@
 .MainLogo {
     text-align: left;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-.MainLogo {
     /* 우너프 배경색 */
-    background-color: #3e4528; 
-    min-height: 100vh;
-    display: flex;
+    background-color: #082710; 
+    /* min-height: 50vh; */
+    /* display: flex; */
     flex-direction: column;
     align-items: left;
     justify-content: left;
     font-size: calc(10px + 2vmin);
     color: white;
+    margin-top: 20px;
   }
   
