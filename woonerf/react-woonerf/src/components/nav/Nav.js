@@ -1,54 +1,56 @@
 import React from 'react';
 import styled from 'styled-components'
-import './Nav.css';
 
 const StyledNav = styled.button`
-    display: inline-flex;
+    display: flex;
     outline: none;
     border: none;
     border-radius: 4px;
     color: #9b8355;
     font-weight: bold;
     cursor: pointer;
-    padding-left: 1rem;
-    padding-right: 1rem;
 
     /* 크기 */
-    width: 10rem;
+    width: 100%;
     height: 2.25rem;
-    font-size: 1rem;
+    font-size: 2rem;
 
     /* 색상 */
     background: rgba(0,0,0,0);
     &:hover {
-    background: #339af0;
+    background: #3e4528;
     }
     &:active {
-    background: #1c7ed6;
+    background: rgba(31,31,31);
     }
 
     /* 기타 */
     & + & {
-    margin-left: 1rem;
+    margin-top: 5rem;
     }
+
+    font-family: var(--font-poppins);
 `;
 
+
 const Nav = (props) => (
-    <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav className="navbar" id="mainNav">
         <div className="container">
             <div className="collapse navbar-collapse" id="navbarResponsive">
+
                 <StyledNav className="nav-item">
-                    <a className="nav-link" >{props.menu[0]}</a>
+                    {props.menu[0]}
                 </StyledNav>
                 <StyledNav className="nav-item">
-                    <a className="nav-link" >{props.menu[1]}</a>
+                    {props.menu[1]}
                 </StyledNav>
                 <StyledNav className="nav-item">
-                    <a className="nav-link">{props.menu[2]}</a>
+                    {props.menu[2]}
                 </StyledNav>
                 <StyledNav className="nav-item">
-                    <a className="nav-link">{props.menu[3]}</a>
+                    {props.menu[3]}
                 </StyledNav>
+
             </div>
         </div>
     </nav>
