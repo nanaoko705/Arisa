@@ -7,7 +7,7 @@ const StyledNav = styled.button`
     outline: none;
     border: none;
     border-radius: 4px;
-    color: white;
+    color: #9b8355;
     font-weight: bold;
     cursor: pointer;
     padding-left: 1rem;
@@ -38,16 +38,16 @@ const Nav = (props) => (
         <div className="container">
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <StyledNav className="nav-item">
-                    <a className="nav-link js-scroll-trigger" href="#about">{props.menu[0]}</a>
+                    <a className="nav-link" >{props.menu[0]}</a>
                 </StyledNav>
                 <StyledNav className="nav-item">
-                    <a className="nav-link js-scroll-trigger" href="#class">{props.menu[1]}</a>
+                    <a className="nav-link" >{props.menu[1]}</a>
                 </StyledNav>
                 <StyledNav className="nav-item">
-                    <a className="nav-link js-scroll-trigger" href="#shop">{props.menu[2]}</a>
+                    <a className="nav-link">{props.menu[2]}</a>
                 </StyledNav>
                 <StyledNav className="nav-item">
-                    <a className="nav-link js-scroll-trigger" href="#archive">{props.menu[3]}</a>
+                    <a className="nav-link">{props.menu[3]}</a>
                 </StyledNav>
             </div>
         </div>
