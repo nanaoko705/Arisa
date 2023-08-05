@@ -14,19 +14,19 @@ import Archive from "./components/archive/Archive";
 
 const menus = ['A b o u t', 'C l a s s', 'S h o p', 'A r c h i v e']
 
-function App() {
+function App() { 
   return (
     <div className="App">
       <Routes>
-        <Route path="/" exact={true} component={App} />
-        <Route path="/about" component={About} />
-        <Route path="/class" component={Class} />
-        <Route path="/shop" component={Shop} />
-        <Route path="/archive" component={Archive} />
+        <Route path="/" exact={true} element={<Nav menu={menus} />}/>
+        <Route path="/about" element={<About />} />
+        <Route path="/class" element={<Class />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/archive" element={<Archive />} />
       </Routes>
-      <MainLogo />
+      {/* <MainLogo /> */}
       <header className="App-header">
-        <Nav menu={menus}/>
+        {/* <Nav menu={menus}/> */}
       </header>
     </div>  
   );
