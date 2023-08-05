@@ -1,5 +1,7 @@
 import React from 'react';
 
+import BlogList from '../BlogList';
+
 const Archive = () => {
     return (
         <div>
