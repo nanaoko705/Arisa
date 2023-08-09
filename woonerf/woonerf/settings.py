@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'rest_framework', 
     'account',
-    'board'
+    'board',
+    'About'
 ]
 
 #추가한 부분

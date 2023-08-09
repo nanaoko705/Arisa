@@ -8,5 +8,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("user/", include('account.urls')),  # Comma was missing here
     path("", include('board.urls')),
+    path("", include('About.urls')),
 
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
