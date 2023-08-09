@@ -3,16 +3,15 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const StyledNavbar = styled.div`
+    background-color: #082710;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    background-color: #082710;
-    color: white;
-    font-size: calc(10px + 2vmin);
-    margin: auto;
-`;
 
+    font-size: calc(10px + 2vmin);
+    color: white;
+`
 
 const StyledLogo = styled.div`
     text-align: center;
@@ -84,7 +83,7 @@ const Nav = (props) => (
                 </StyledNav>
             </div>
         </div>
-    </StyledNavbar>
+    </StyledNavbar> 
 )
 
 export default Nav;

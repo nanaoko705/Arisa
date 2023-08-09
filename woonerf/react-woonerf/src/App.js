@@ -16,19 +16,13 @@ const menus = ['A b o u t', 'C l a s s', 'S h o p', 'A r c h i v e']
 
 function App() { 
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" exact={true} element={<Nav menu={menus} />}/>
-        <Route path="/about" element={<About />} />
-        <Route path="/class" element={<Class />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/archive" element={<Archive />} />
-      </Routes>
-      {/* <MainLogo /> */}
-      <header className="App-header">
-        {/* <Nav menu={menus}/> */}
-      </header>
-    </div>  
+    <Routes>
+      <Route path="/" exact={true} element={<Nav menu={menus} />}/>
+      <Route path="/about" element={<About />} />
+      <Route path="/class" element={<Class />} />
+      <Route path="/shop" element={<Shop />} />
+      <Route path="/archive" element={<Archive />} />
+    </Routes>  
   );
 }
 
