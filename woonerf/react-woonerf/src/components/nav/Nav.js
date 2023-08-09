@@ -2,6 +2,18 @@ import React from 'react';
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
+const StyledNavbar = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #082710;
+    color: white;
+    font-size: calc(10px + 2vmin);
+    margin: auto;
+`;
+
+
 const StyledLogo = styled.div`
     text-align: center;
     /* 우너프 배경색 */
@@ -15,6 +27,10 @@ const StyledLogo = styled.div`
     color: white;
     margin-top: 20px;
     margin-bottom: 80px;
+
+    display: block;
+    width : 100%;
+    text-align : center;
 `
 
 const StyledNav = styled(Link)`
@@ -46,7 +62,7 @@ const StyledNav = styled(Link)`
 `;
 
 const Nav = (props) => (
-    <nav className="navbar" id="mainNav">
+    <StyledNavbar className="navbar" id="mainNav">
         <StyledLogo ClassName="MainLogo" id="mainLogo">
             <img src="http://127.0.0.1:8000/media/MainLogo/wnrf_green_gold.png" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
             {/* <a className="navbar-brand js-scroll-trigger" href="/" >Woonerf</a> */}
@@ -68,7 +84,7 @@ const Nav = (props) => (
                 </StyledNav>
             </div>
         </div>
-    </nav>
+    </StyledNavbar>
 )
 
 export default Nav;

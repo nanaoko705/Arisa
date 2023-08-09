@@ -2,7 +2,9 @@
   text-align: center;
   background-color: #082710;
   display: flex;
-}
+  /* align-items: center; 이거 세로로 가운데 정렬 */
+
+} 
 
 .App-logo {
   height: 40vmin;
@@ -28,4 +30,8 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Nav {
+  margin: auto;
 }
