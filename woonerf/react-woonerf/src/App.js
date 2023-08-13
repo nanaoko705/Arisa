@@ -1,12 +1,9 @@
 import "./App.css";
 import React from "react";
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
-import BlogList from "./components/BlogList.js";
-import MainLogo from "./components/mainLogo/MainLogo";
 import Nav from "./components/nav/Nav";
 
-import Home from "./components/Home";
 import About from "./components/about/About";
 import Class from "./components/class/Class";
 import Shop from "./components/shop/Shop";
