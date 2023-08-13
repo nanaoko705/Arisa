@@ -40,6 +40,8 @@ const SytledImage = styled.div`
     margin-right: 60px; //버튼 크기에 따라서 조정할 필요가 있음
 `
 
+const heightPercentage = 100;
+
 
 const Archive = () => {
     function goMain(e) {
@@ -88,7 +90,7 @@ const Archive = () => {
             {/* 아카이브 구현하기 */}
             <button onClick={onClick_post}>post</button>
             <button onClick={onClick_get}>load</button>
-            {text && <textarea rows={15} value={JSON.stringify(text, null, 2)} readOnly={true}/>}
+            {text && <textarea style={{ height: `${heightPercentage}%` }} value={JSON.stringify(text, null, 2)} readOnly={true}/>}
 
             <h1>list</h1>
             {text && <img src="http://127.0.0.1:8000/media/2023/07/23/header-bg.jpg" alt="" />}
