@@ -39,7 +39,11 @@ const StyledLogo = styled.div`
 `
 
 const SytledImage = styled.div`
+<<<<<<< HEAD
     margin-right: 60px; //버튼 크기에 따라서 조정할 필요가 있음
+=======
+    margin-right: 68px; //버튼 크기에 따라서 조정할 필요가 있음
+>>>>>>> 28447c2764538735db13dbd9eb4c3365594ebc1a
 `
 
 
