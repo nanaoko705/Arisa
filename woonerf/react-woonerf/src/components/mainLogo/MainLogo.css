@@ -1,0 +1,26 @@
+.MainLogo {
+    text-align: center;
+    /* 우너프 배경색 */
+    background-color: #082710; 
+    /* min-height: 50vh; */
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .LogoImage {
+    text-align: center;
+    /* 우너프 배경색 */
+    background-color: #082710; 
+    /* min-height: 50vh; */
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }

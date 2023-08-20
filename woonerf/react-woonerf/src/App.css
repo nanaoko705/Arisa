@@ -1,6 +1,12 @@
 .App {
   text-align: center;
-}
+  background-color: #082710;
+  display: flex;
+  /* align-items: center; 이거 세로로 가운데 정렬 */
+
+  min-height: 100vh;
+  flex-direction: column;
+} 
 
 .App-logo {
   height: 40vmin;
@@ -14,7 +20,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #082710;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,13 +32,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -19,7 +19,8 @@ const menus = ['about', 'news', 'gallery', 'shop', 'contact'];
 function App() {
   return (
     <Fragment>  
-      <Home />
+      {/* <Home /> */}
+      {/* <RestAPI/> */}
 
       <Nav menu={menus} />
       <Masthead />

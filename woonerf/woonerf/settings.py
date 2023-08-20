@@ -41,7 +41,11 @@ INSTALLED_APPS = [
     'rest_framework', 
     'account',
     'board',
+<<<<<<< HEAD
     'About'
+=======
+    'corsheaders',
+>>>>>>> 7a9f269b2d07d472be5951d2b6306252157224c3
 ]
 
 #추가한 부분
@@ -61,6 +65,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = "woonerf.urls"
@@ -68,7 +73,9 @@ ROOT_URLCONF = "woonerf.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            os.path.join(BASE_DIR, 'react-woonerf/build'), # 경로 변경
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -131,3 +138,6 @@ STATIC_URL = "/static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+CORS_ORIGIN_WHITELIST = ('http://127.0.0.1:3000', 'http://localhost:3000')
+CORS_ALLOW_CREDENTIALS = True

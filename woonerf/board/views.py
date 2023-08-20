@@ -9,4 +9,5 @@ class BlogViewSet(viewsets.ModelViewSet):
    
    	# serializer.save() 재정의
     def perform_create(self, serializer):
-        serializer.save(user = self.request.user)
+        serializer.save(user = self.request.user)   
+    
