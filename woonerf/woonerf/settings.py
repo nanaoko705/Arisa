@@ -24,9 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-$@&ol85j_$d+d=&%!3!3r@%m9e-l&&)d(9k7+x7-%#!ddkght)"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'noyesa.pythonanywhere.com'
+]
 
 
 # Application definition
@@ -38,14 +40,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'rest_framework', 
+    'rest_framework',    
+    'corsheaders',
     'account',
     'board',
-<<<<<<< HEAD
-    'About'
-=======
-    'corsheaders',
->>>>>>> 7a9f269b2d07d472be5951d2b6306252157224c3
+    'About',
 ]
 
 #추가한 부분
