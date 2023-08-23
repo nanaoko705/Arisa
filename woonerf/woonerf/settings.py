@@ -141,6 +141,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CORS_ORIGIN_WHITELIST = ('http://127.0.0.1:3000', 'http://localhost:3000')
 CORS_ALLOW_CREDENTIALS = True
 
-STATICFILES_DIRS = [
-    str(root.path("react-woonerf/build/static")),
-]
+#DEBUD = False 할 경우 호스팅 고장나서, 모든 all로 설정해줌
+ALLOWED_HOSTS = ['*']

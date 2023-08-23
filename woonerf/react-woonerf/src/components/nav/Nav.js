@@ -63,7 +63,7 @@ const StyledNav = styled(Link)`
 const Nav = (props) => (
     <StyledNavbar className="navbar" id="mainNav">
         <StyledLogo ClassName="MainLogo" id="mainLogo">
-            <img src="http://127.0.0.1:8000/media/MainLogo/wnrf_green_gold.png" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
+            <img src="./media/MainLogo/wnrf_green_gold.png" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
             {/* <a className="navbar-brand js-scroll-trigger" href="/" >Woonerf</a> */}
         </StyledLogo>
 

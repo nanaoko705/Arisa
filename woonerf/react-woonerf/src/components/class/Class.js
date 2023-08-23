@@ -51,10 +51,10 @@ const Class = () => {
         <StyledMain >
             <StyledLogo ClassName="MainLogo" id="mainLogo">
                 <StyledNavbar>
-                    <img onClick={showMenu}src="http://127.0.0.1:8000/media/menu_button.png" alt="메뉴버튼"/>
+                    <img onClick={showMenu}src="./media/menu_button.png" alt="메뉴버튼"/>
                 </StyledNavbar>
                 <SytledImage>    
-                    <img onClick={goMain} src="http://127.0.0.1:8000/media/MainLogo/wnrf_green_black.png" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
+                    <img onClick={goMain} src="./media/MainLogo/wnrf_green_black.png" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
                 </SytledImage>
             </StyledLogo>
 
