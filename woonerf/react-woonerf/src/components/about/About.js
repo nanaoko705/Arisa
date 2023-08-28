@@ -41,10 +41,13 @@ const SytledImage = styled.div`
 
 const StyledText = styled.div`
     text-aalign: center;
-    font-family: var(--font-poppins);
+    font-size: 1.25rem;
     width: 830px;
     margin-bottom:200px;
 `
+    // font-family: var(--font-poppins);
+    // 일단 팝핀즈는 영어 글꼴이니까, 딴거 찾을 때 까지는 빼두는 걸로 하자.
+    // 글꼴 치우니까 일단 사이즈 적용 성공
 
 const About = () => {
     function goMain(e) {
