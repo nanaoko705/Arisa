@@ -12,17 +12,12 @@ const StyledMain = styled.div`
     color: black;
 `
 
-const StyledNavbar = styled.button`
-    float: left;
-    margin-left: 2.5%;
-    border:none;
-    background-color:transparent;
-    img {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-`
+// const StyledNavBarContainer = styled.div`
+//     display: flex;
+//     justify-content: space-betwwen;
+//     align-items: center;
+//     padding: 50px;
+// `
 
 const StyledLogo = styled.div`
     text-align: center;
@@ -32,11 +27,11 @@ const StyledLogo = styled.div`
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: black;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 20%;
 
     display: block;
-    width : 100%;
+    width : 70%;
     text-align : center;
 
     img {
@@ -44,24 +39,25 @@ const StyledLogo = styled.div`
         height: auto;
         object-fit: cover;
     }
+    
+
 `
+//position: fixed;
 
 const SytledImage = styled.div`
-    margin-right: 2vw; //버튼 크기에 따라서 조정할 필요가 있음
     img {
         max-width: 100%;
         height: auto;
         object-fit: cover;
     }
-
 `
     //margin-right: 60px; //버튼 크기에 따라서 조정할 필요가 있음
 const StyledText = styled.div`
-    text-aalign: center;
+    text-align: center;
     font-size: 0.65rem;
-    margin-bottom:200px;
-    margin-left:35%;
-    margin-right:35%;
+    margin-bottom: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
     max-width: 100%;
     height: auto;
 `
@@ -82,13 +78,15 @@ const About_mobile = () => {
                 <SytledImage>    
                     <img onClick={goMain} src="./media/MainLogo/wnrf_green_black.png" styled="max-width: 100%; height:auto;" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
                 </SytledImage>
-            </StyledLogo>
+            </StyledLogo>  
 
             {/* About 구현하기 */}
             <div className="intro" styled="width: 1200px; height:294px; overflow:hidden;">
-                <img src="./media/about/about_img.png" alt="about" />
+                <SytledImage>
+                    <img src="./media/about/about_img.png" alt="about" />
+                </SytledImage>
                 <StyledText>
-                    <h1>Korean Styled Modern Bonsai</h1>
+                    <h2>Korean Styled Modern Bonsai</h2>
                     <p>
                         1955년부터 하우스의 상징이 된 퀼팅 모티프에서 영감을 얻어 탄생한 컬렉션입니다. 다이아몬드 세팅 유무를 선택할 수 있는 베이지 골드, 예롤우 골드 또는 화이트 골드 소재의 제품을 만나보세요. 위의 글은 예시입니다. ㅎㅎ
                     </p>
@@ -101,9 +99,11 @@ const About_mobile = () => {
             </div>
 
             <div className="crew1" styled="width: 1200px; overflow:hidden;">
-                <img src="./media/about/crew_img1.jpg" alt="crew" />
+                <SytledImage>
+                    <img src="./media/about/crew_img1.jpg" alt="crew" />
+                </SytledImage>
                 <StyledText>
-                    <h1>Woon Young Choi1</h1>
+                    <h2>Woon Young Choi1</h2>
                 </StyledText>
                 <StyledText>
                     <p>
@@ -113,9 +113,11 @@ const About_mobile = () => {
             </div>
             
             <div className="crew2" styled="width: 1200px; overflow:hidden;">
-                <img src="./media/about/crew_img2.jpg" alt="crew" />
+                <SytledImage>
+                    <img src="./media/about/crew_img2.jpg" alt="crew" />
+                </SytledImage>
                 <StyledText>
-                    <h1>Woon Young Choi2</h1>
+                    <h2>Woon Young Choi2</h2>
                 </StyledText>
                 <StyledText>
                     <p>
@@ -125,9 +127,11 @@ const About_mobile = () => {
             </div>
 
             <div className="crew3" styled="width: 1200px; overflow:hidden;">
-                <img src="./media/about/crew_img3.jpg" alt="crew" />
+                <SytledImage>
+                    <img src="./media/about/crew_img3.jpg" alt="crew" />
+                </SytledImage>
                 <StyledText>
-                    <h1>Woon Young Choi3</h1>
+                    <h2>Woon Young Choi3</h2>
                 </StyledText>
                 <StyledText>
                     <p>

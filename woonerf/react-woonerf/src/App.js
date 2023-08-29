@@ -13,20 +13,18 @@ import Archive from "./components/archive/Archive";
 
 import {useMediaQuery} from 'react-responsive';
 
-
 const menus = ['A b o u t', 'C l a s s', 'S h o p', 'A r c h i v e']
 
 function App() { 
-
-    const isMobile = useMediaQuery({
-      query : "(max-width:450px)"
+  const isMobile = useMediaQuery({
+    query : "(max-width:450px)"
   });
-    const isTablet = useMediaQuery({
-        query : "(max-width:768px)"
-    });
-    const isPc = useMediaQuery({
-        query : "(min-width:769px)"
-    });
+  const isTablet = useMediaQuery({
+      query : "(max-width:768px)"
+  });
+  const isPc = useMediaQuery({
+      query : "(min-width:769px)"
+  });
   return (
     <Routes>
       <Route path="/" exact={true} element={<Nav menu={menus} />} />

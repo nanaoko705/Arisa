@@ -14,7 +14,7 @@ const StyledMain = styled.div`
 
 const StyledNavbar = styled.button`
     float: left;
-    margin-left: 2.5%;
+    margin-left: 70px;
     border:none;
     background-color:transparent;
 `
@@ -27,23 +27,39 @@ const StyledLogo = styled.div`
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: black;
-    margin-top: 20px;
-    margin-bottom: 80px;
+    margin-top: 2.5%;
+    margin-bottom: 20%;
+    margin-right: 130px;
 
     display: block;
     width : 100%;
     text-align : center;
+
+    img { 
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 `
 
 const SytledImage = styled.div`
-    margin-right: 60px; //버튼 크기에 따라서 조정할 필요가 있음
+    img {
+        align-items: center;
+
+        max-width: 100%;
+        hegith: auto;
+        object-fit: cover;
+    }
 `
 
 const StyledText = styled.div`
-    text-aalign: center;
+    text-align: center;
     font-size: 1.25rem;
-    width: 830px;
-    margin-bottom:200px;
+    margin-bottom:20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 100%;
+    height: auto;
 `
     // font-family: var(--font-poppins);
     // 일단 팝핀즈는 영어 글꼴이니까, 딴거 찾을 때 까지는 빼두는 걸로 하자.
@@ -69,7 +85,9 @@ const About_tablet = () => {
 
             {/* About 구현하기 */}
             <div className="intro" styled="width: 1200px; height:294px; overflow:hidden;">
-                <img src="./media/about/about_img.png" alt="about" />
+                <SytledImage>
+                    <img src="./media/about/about_img.png" alt="about" />
+                </SytledImage>
                 <StyledText>
                     <h1>Korean Styled Modern Bonsai</h1>
                     <p>
@@ -84,7 +102,10 @@ const About_tablet = () => {
             </div>
 
             <div className="crew1" styled="width: 1200px; overflow:hidden;">
-                <img src="./media/about/crew_img1.jpg" alt="crew" />
+                <SytledImage>    
+                    <img src="./media/about/crew_img1.jpg" alt="crew" />
+                </SytledImage>    
+
                 <StyledText>
                     <h1>Woon Young Choi1</h1>
                 </StyledText>
@@ -96,7 +117,9 @@ const About_tablet = () => {
             </div>
             
             <div className="crew2" styled="width: 1200px; overflow:hidden;">
-                <img src="./media/about/crew_img2.jpg" alt="crew" />
+                <SytledImage>
+                    <img src="./media/about/crew_img2.jpg" alt="crew" />
+                </SytledImage>
                 <StyledText>
                     <h1>Woon Young Choi2</h1>
                 </StyledText>
@@ -108,7 +131,9 @@ const About_tablet = () => {
             </div>
 
             <div className="crew3" styled="width: 1200px; overflow:hidden;">
-                <img src="./media/about/crew_img3.jpg" alt="crew" />
+                <SytledImage>
+                    <img src="./media/about/crew_img3.jpg" alt="crew" />
+                </SytledImage>
                 <StyledText>
                     <h1>Woon Young Choi3</h1>
                 </StyledText>
