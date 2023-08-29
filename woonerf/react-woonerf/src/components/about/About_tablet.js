@@ -17,11 +17,6 @@ const StyledNavbar = styled.button`
     margin-left: 2.5%;
     border:none;
     background-color:transparent;
-    img {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
 `
 
 const StyledLogo = styled.div`
@@ -32,44 +27,29 @@ const StyledLogo = styled.div`
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: black;
-    margin-top: 5%;
-    margin-bottom: 20%;
+    margin-top: 20px;
+    margin-bottom: 80px;
 
     display: block;
     width : 100%;
     text-align : center;
-
-    img {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
 `
 
 const SytledImage = styled.div`
-    margin-right: 2vw; //버튼 크기에 따라서 조정할 필요가 있음
-    img {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
+    margin-right: 60px; //버튼 크기에 따라서 조정할 필요가 있음
 `
-    //margin-right: 60px; //버튼 크기에 따라서 조정할 필요가 있음
+
 const StyledText = styled.div`
     text-aalign: center;
-    font-size: 0.65rem;
+    font-size: 1.25rem;
+    width: 830px;
     margin-bottom:200px;
-    margin-left:35%;
-    margin-right:35%;
-    max-width: 100%;
-    height: auto;
 `
     // font-family: var(--font-poppins);
     // 일단 팝핀즈는 영어 글꼴이니까, 딴거 찾을 때 까지는 빼두는 걸로 하자.
     // 글꼴 치우니까 일단 사이즈 적용 성공
 
-const About_mobile = () => {
+const About_tablet = () => {
     function goMain(e) {
         window.location.href = "/"
     }
@@ -79,8 +59,11 @@ const About_mobile = () => {
     return (
         <StyledMain >
             <StyledLogo ClassName="MainLogo" id="mainLogo">
+                <StyledNavbar>
+                    <img onClick={showMenu}src="./media/menu_button.png" alt="메뉴버튼"/>
+                </StyledNavbar>
                 <SytledImage>    
-                    <img onClick={goMain} src="./media/MainLogo/wnrf_green_black.png" styled="max-width: 100%; height:auto;" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
+                    <img onClick={goMain} src="./media/MainLogo/wnrf_green_black.png" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
                 </SytledImage>
             </StyledLogo>
 
@@ -139,4 +122,4 @@ const About_mobile = () => {
     )
 }
 
-export default About_mobile;
+export default About_tablet;
