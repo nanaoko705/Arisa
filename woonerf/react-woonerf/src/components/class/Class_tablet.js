@@ -28,17 +28,26 @@ const StyledLogo = styled.div`
     font-size: calc(10px + 2vmin);
     color: black;
     margin-top: 2.5%;
-    margin-bottom: 5%;
+    margin-bottom: 20%;
     margin-right: 130px;
+
     display: block;
     width : 100%;
     text-align : center;
+
+    img { 
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 `
 
 const SytledImage = styled.div`
     img {
+        align-items: center;
+
         max-width: 100%;
-        height: auto;
+        hegith: auto;
         object-fit: cover;
     }
 `
@@ -46,15 +55,17 @@ const SytledImage = styled.div`
 const StyledText = styled.div`
     text-align: center;
     font-size: 1.25rem;
-    width: 830px;
-    margin-bottom:200px;
+    margin-bottom:20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 100%;
+    height: auto;
 `
     // font-family: var(--font-poppins);
     // 일단 팝핀즈는 영어 글꼴이니까, 딴거 찾을 때 까지는 빼두는 걸로 하자.
     // 글꼴 치우니까 일단 사이즈 적용 성공
 
-
-const Class = () => {
+const Class_tablet = () => {
     function goMain(e) {
         window.location.href = "/"
     }
@@ -69,27 +80,32 @@ const Class = () => {
                 </StyledNavbar>
                 <SytledImage>    
                     <img onClick={goMain} src="./media/MainLogo/wnrf_green_black.png" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
-                    <button onClick={goMain}> 클래스 예약하기 </button>
                 </SytledImage>
             </StyledLogo>
-        
-            {/* 클래스 구현하기 */}
+
+            {/* About 구현하기 */}
             <div className="intro" styled="width: 1200px; height:294px; overflow:hidden;">
                 <SytledImage>
                     <img src="./media/class/class_img.png" alt="class" />
                 </SytledImage>
                 <StyledText>
-                    <h1>Korean Styled Modern Bonsai Class</h1>
+                    <h1>Korean Styled Modern Bonsai</h1>
                     <p>
-                        Class 설명
+                        1955년부터 하우스의 상징이 된 퀼팅 모티프에서 영감을 얻어 탄생한 컬렉션입니다. 다이아몬드 세팅 유무를 선택할 수 있는 베이지 골드, 예롤우 골드 또는 화이트 골드 소재의 제품을 만나보세요. 위의 글은 예시입니다. ㅎㅎ
+                    </p>
+                </StyledText>
+                <StyledText>
+                    <p>
+                        1955년부터 하우스의 상징이 된 퀼팅 모티프에서 영감을 얻어 탄생한 컬렉션입니다. 다이아몬드 세팅 유무를 선택할 수 있는 베이지 골드, 예롤우 골드 또는 화이트 골드 소재의 제품을 만나보세요. 위의 글은 예시입니다. ㅎㅎ
                     </p>
                 </StyledText>
             </div>
 
             <div className="crew1" styled="width: 1200px; overflow:hidden;">
-                <SytledImage>
+                <SytledImage>    
                     <img src="./media/class/class_img1.jpg" alt="class" />
-                </SytledImage>
+                </SytledImage>    
+
                 <StyledText>
                     <h1>Woon Young Choi1</h1>
                 </StyledText>
@@ -131,4 +147,4 @@ const Class = () => {
     )
 }
 
-export default Class;
+export default Class_tablet;

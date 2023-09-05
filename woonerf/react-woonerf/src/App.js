@@ -7,7 +7,11 @@ import Nav from "./components/nav/Nav";
 import About from "./components/about/About";
 import About_mobile from "./components/about/About_mobile";
 import About_tablet from "./components/about/About_tablet";
+
 import Class from "./components/class/Class";
+import Class_moblie from "./components/class/Class_mobile";
+import Class_tablet from "./components/class/Class_tablet";
+
 import Shop from "./components/shop/Shop";
 import Archive from "./components/archive/Archive";
 
@@ -31,10 +35,14 @@ function App() {
       {isMobile && <Route path="/about" element={<About_mobile />} />}
       {isTablet && <Route path="/about" element={<About_tablet />} />}
       {isPc && <Route path="/about" element={<About />} />}
-      {isMobile && <Route path="/class" element={<Class />} />}
+
+      {isMobile && <Route path="/class" element={<class_moblie />} />}
+      {isTablet && <Route path="/class" element={<Class_tablet />} />}
       {isPc && <Route path="/class" element={<Class />} />}
+      
       {isMobile && <Route path="/shop" element={<Shop />} />}
       {isPc && <Route path="/shop" element={<Shop />} />}
+      
       {isMobile && <Route path="/archive" element={<Archive />} />}
       {isPc && <Route path="/archive" element={<Archive />} />}
     </Routes>
