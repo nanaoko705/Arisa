@@ -53,6 +53,13 @@ const StyledText = styled.div`
     // 일단 팝핀즈는 영어 글꼴이니까, 딴거 찾을 때 까지는 빼두는 걸로 하자.
     // 글꼴 치우니까 일단 사이즈 적용 성공
 
+// styled component를 한번 쓰면, 이제 css태그 적용 못함 ㅈ댐ㅋ
+// 그래도 쓸거임ㅋ
+
+const StyledClassButton = styled.button`
+    background-color: transparent;
+    border: none;
+`
 
 const Class = () => {
     function goMain(e) {
@@ -69,12 +76,12 @@ const Class = () => {
                 </StyledNavbar>
                 <SytledImage>    
                     <img onClick={goMain} src="./media/MainLogo/wnrf_green_black.png" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
-                    <button onClick={goMain}> 클래스 예약하기 </button>
+                    <StyledClassButton onClick={goMain}>클래스 예약하기</StyledClassButton>
                 </SytledImage>
             </StyledLogo>
         
             {/* 클래스 구현하기 */}
-            <div className="intro" styled="width: 1200px; height:294px; overflow:hidden;">
+            <div className="intro">
                 <SytledImage>
                     <img src="./media/class/class_img.png" alt="class" />
                 </SytledImage>
