@@ -40,6 +40,7 @@ const SytledImage = styled.div`
         max-width: 100%;
         height: auto;
         object-fit: cover;
+        position : relativ;
     }
 `
 
@@ -56,9 +57,16 @@ const StyledText = styled.div`
 // styled component를 한번 쓰면, 이제 css태그 적용 못함 ㅈ댐ㅋ
 // 그래도 쓸거임ㅋ
 
+const StyledCanvas = styled.canvas`
+    position: relative;
+`
+
 const StyledClassButton = styled.button`
     background-color: transparent;
     border: none;
+    position : absolute;
+    top : 0px;
+    left: 0px;
 `
 
 const Class = () => {
@@ -76,14 +84,14 @@ const Class = () => {
                 </StyledNavbar>
                 <SytledImage>    
                     <img onClick={goMain} src="./media/MainLogo/wnrf_green_black.png" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
-                    <StyledClassButton onClick={goMain}>클래스 예약하기</StyledClassButton>
                 </SytledImage>
             </StyledLogo>
         
             {/* 클래스 구현하기 */}
             <div className="intro">
                 <SytledImage>
-                    <img src="./media/class/class_img.png" alt="class" />
+                    <img className="canvas" src="./media/about/about_img.png" alt="class" />
+                    <button className="canvas" onClick={goMain}>클래스 예약하기</button>
                 </SytledImage>
                 <StyledText>
                     <h1>Korean Styled Modern Bonsai Class</h1>
