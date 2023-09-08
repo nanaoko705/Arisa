@@ -32,7 +32,6 @@ const StyledLogo = styled.div`
     margin-right: 130px;
     display: block;
     width : 100%;
-    text-align : center;
 `
 
 const SytledImage = styled.div`
@@ -57,16 +56,14 @@ const StyledText = styled.div`
 // styled component를 한번 쓰면, 이제 css태그 적용 못함 ㅈ댐ㅋ
 // 그래도 쓸거임ㅋ
 
-const StyledCanvas = styled.canvas`
-    position: relative;
-`
-
 const StyledClassButton = styled.button`
     background-color: transparent;
+    color: white;
     border: none;
     position : absolute;
-    top : 0px;
-    left: 0px;
+    top: 700px;
+    left: 45%;
+    font-size: 1.75rem;
 `
 
 const Class = () => {
@@ -91,7 +88,7 @@ const Class = () => {
             <div className="intro">
                 <SytledImage>
                     <img className="canvas" src="./media/about/about_img.png" alt="class" />
-                    <button className="canvas" onClick={goMain}>클래스 예약하기</button>
+                    <StyledClassButton className="canvas" onClick={goMain}>클래스 예약하기</StyledClassButton>
                 </SytledImage>
                 <StyledText>
                     <h1>Korean Styled Modern Bonsai Class</h1>
