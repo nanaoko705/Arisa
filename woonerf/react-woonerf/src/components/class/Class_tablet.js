@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import Footer from '../footer/Footer';
 
 const StyledMain = styled.div`
     background-color: #FFFFFF;
@@ -28,42 +29,43 @@ const StyledLogo = styled.div`
     font-size: calc(10px + 2vmin);
     color: black;
     margin-top: 2.5%;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
     margin-right: 130px;
-
     display: block;
     width : 100%;
-    text-align : center;
-
-    img { 
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
 `
 
 const SytledImage = styled.div`
     img {
-        align-items: center;
-
         max-width: 100%;
-        hegith: auto;
+        height: auto;
         object-fit: cover;
+        position : relativ;
     }
 `
 
 const StyledText = styled.div`
     text-align: center;
     font-size: 1.25rem;
-    margin-bottom:20%;
-    margin-left: 10%;
-    margin-right: 10%;
-    max-width: 100%;
-    height: auto;
+    width: 830px;
+    margin-bottom:200px;
 `
     // font-family: var(--font-poppins);
     // 일단 팝핀즈는 영어 글꼴이니까, 딴거 찾을 때 까지는 빼두는 걸로 하자.
     // 글꼴 치우니까 일단 사이즈 적용 성공
+
+// styled component를 한번 쓰면, 이제 css태그 적용 못함 ㅈ댐ㅋ
+// 그래도 쓸거임ㅋ
+
+const StyledClassButton = styled.button`
+    background-color: transparent;
+    color: white;
+    border: none;
+    position : absolute;
+    top: 700px;
+    left: 45%;
+    font-size: 1.75rem;
+`
 
 const Class_tablet = () => {
     function goMain(e) {
@@ -73,6 +75,7 @@ const Class_tablet = () => {
         // 나중에 구현하기
     }
     return (
+        <div>
         <StyledMain >
             <StyledLogo ClassName="MainLogo" id="mainLogo">
                 <StyledNavbar>
@@ -82,30 +85,25 @@ const Class_tablet = () => {
                     <img onClick={goMain} src="./media/MainLogo/wnrf_green_black.png" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
                 </SytledImage>
             </StyledLogo>
-
-            {/* About 구현하기 */}
-            <div className="intro" styled="width: 1200px; height:294px; overflow:hidden;">
+        
+            {/* 클래스 구현하기 */}
+            <div className="intro">
                 <SytledImage>
-                    <img src="./media/class/class_img.png" alt="class" />
+                    <img className="canvas" src="./media/about/about_img.png" alt="class" />
+                    <StyledClassButton className="canvas" onClick={goMain}>클래스 예약하기</StyledClassButton>
                 </SytledImage>
                 <StyledText>
-                    <h1>Korean Styled Modern Bonsai</h1>
+                    <h1>Korean Styled Modern Bonsai Class</h1>
                     <p>
-                        1955년부터 하우스의 상징이 된 퀼팅 모티프에서 영감을 얻어 탄생한 컬렉션입니다. 다이아몬드 세팅 유무를 선택할 수 있는 베이지 골드, 예롤우 골드 또는 화이트 골드 소재의 제품을 만나보세요. 위의 글은 예시입니다. ㅎㅎ
-                    </p>
-                </StyledText>
-                <StyledText>
-                    <p>
-                        1955년부터 하우스의 상징이 된 퀼팅 모티프에서 영감을 얻어 탄생한 컬렉션입니다. 다이아몬드 세팅 유무를 선택할 수 있는 베이지 골드, 예롤우 골드 또는 화이트 골드 소재의 제품을 만나보세요. 위의 글은 예시입니다. ㅎㅎ
+                        Class 설명
                     </p>
                 </StyledText>
             </div>
 
             <div className="crew1" styled="width: 1200px; overflow:hidden;">
-                <SytledImage>    
+                <SytledImage>
                     <img src="./media/class/class_img1.jpg" alt="class" />
-                </SytledImage>    
-
+                </SytledImage>
                 <StyledText>
                     <h1>Woon Young Choi1</h1>
                 </StyledText>
@@ -144,6 +142,8 @@ const Class_tablet = () => {
                 </StyledText>
             </div>
         </StyledMain>
+        <Footer/>
+        </div>
     )
 }
 

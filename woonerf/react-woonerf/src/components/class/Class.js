@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import Footer from '../footer/Footer';
 
 const StyledMain = styled.div`
     background-color: #FFFFFF;
@@ -74,6 +75,7 @@ const Class = () => {
         // 나중에 구현하기
     }
     return (
+        <div>
         <StyledMain >
             <StyledLogo ClassName="MainLogo" id="mainLogo">
                 <StyledNavbar>
@@ -140,6 +142,8 @@ const Class = () => {
                 </StyledText>
             </div>
         </StyledMain>
+        <Footer/>
+        </div>
     )
 }
 

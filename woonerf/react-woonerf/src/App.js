@@ -45,6 +45,8 @@ function App() {
       
       {isMobile && <Route path="/archive" element={<Archive />} />}
       {isPc && <Route path="/archive" element={<Archive />} />}
+
+      
     </Routes>
   );
 }
