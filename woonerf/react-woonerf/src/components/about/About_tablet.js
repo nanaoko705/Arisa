@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
 
+import Footer from '../footer/Footer';
+
 const StyledMain = styled.div`
     background-color: #FFFFFF;
     min-height: 100vh;
@@ -73,6 +75,7 @@ const About_tablet = () => {
         // 나중에 구현하기
     }
     return (
+        <div>
         <StyledMain >
             <StyledLogo ClassName="MainLogo" id="mainLogo">
                 <StyledNavbar>
@@ -144,6 +147,8 @@ const About_tablet = () => {
                 </StyledText>
             </div>
         </StyledMain>
+        <Footer />
+        </div>
     )
 }
 

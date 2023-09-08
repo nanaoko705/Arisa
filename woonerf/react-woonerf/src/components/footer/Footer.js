@@ -25,7 +25,7 @@ function Footer() {
                     <div class='footer-link-items'>
                         <h2>About Us</h2>
                         <Link to='/sign-up'>How it works</Link>
-                        <Link to='/'>Testimonials</Link>
+                        <Link to='/'>아니면 이 공간을 메뉴 공간으로 만들어도 좋을 듯</Link>
                         <Link to='/'>Careers</Link>
                         <Link to='/'>Investors</Link>
                         <Link to='/'>Terms of Service</Link>
