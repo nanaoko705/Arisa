@@ -133,6 +133,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATIC_URL = "/static/"
 
+STATICFILES_DIRS = [os.path.join(BASE_DIR, '')]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -143,3 +144,5 @@ CORS_ALLOW_CREDENTIALS = True
 
 #DEBUD = False 할 경우 호스팅 고장나서, 모든 all로 설정해줌
 ALLOWED_HOSTS = ['*']
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'react-woonerf/build/static')]
