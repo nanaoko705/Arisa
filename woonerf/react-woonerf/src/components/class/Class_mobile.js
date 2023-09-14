@@ -13,12 +13,12 @@ const StyledMain = styled.div`
     color: black;
 `
 
-const StyledNavbar = styled.button`
-    float: left;
-    margin-left: 70px;
-    border:none;
-    background-color:transparent;
-`
+// const StyledNavbar = styled.button`
+//     float: left;
+//     margin-left: 70px;
+//     border:none;
+//     background-color:transparent;
+// `
 
 const StyledLogo = styled.div`
     text-align: center;
@@ -28,11 +28,18 @@ const StyledLogo = styled.div`
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: black;
-    margin-top: 2.5%;
-    margin-bottom: 5%;
-    margin-right: 130px;
+    margin-top: 10%;
+    margin-bottom: 20%;
+
     display: block;
-    width : 100%;
+    width : 70%;
+    text-align : center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 `
 
 const SytledImage = styled.div`
@@ -40,15 +47,17 @@ const SytledImage = styled.div`
         max-width: 100%;
         height: auto;
         object-fit: cover;
-        position : relativ;
     }
 `
 
 const StyledText = styled.div`
     text-align: center;
-    font-size: 1.25rem;
-    width: 830px;
-    margin-bottom:200px;
+    font-size: 0.65rem;
+    margin-bottom: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 100%;
+    height: auto;
 `
     // font-family: var(--font-poppins);
     // 일단 팝핀즈는 영어 글꼴이니까, 딴거 찾을 때 까지는 빼두는 걸로 하자.
@@ -78,9 +87,6 @@ const Class_mobile = () => {
         <div>
         <StyledMain >
             <StyledLogo ClassName="MainLogo" id="mainLogo">
-                <StyledNavbar>
-                    <img onClick={showMenu}src="./media/menu_button.png" alt="메뉴버튼"/>
-                </StyledNavbar>
                 <SytledImage>    
                     <img onClick={goMain} src="./media/MainLogo/wnrf_green_black.png" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
                 </SytledImage>
