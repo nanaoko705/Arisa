@@ -69,7 +69,7 @@ const StyledText = styled.div`
 
 // styled component를 한번 쓰면, 이제 css태그 적용 못함 ㅈ댐ㅋ
 // 그래도 쓸거임ㅋ
-``
+
 const StyledClassButton = styled.button`
     background-color: transparent;
     color: white;
