@@ -77,7 +77,7 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            os.path.join(BASE_DIR, 'static/build'), # 경로 변경
+            os.path.join(BASE_DIR, 'django-static/build'), # 경로 변경
         ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -148,11 +148,11 @@ CORS_ALLOW_CREDENTIALS = True
 #DEBUD = False 할 경우 호스팅 고장나서, 모든 all로 설정해줌
 ALLOWED_HOSTS = ['*']
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static/build')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'django-static/build')]
 
-WEBPACK_LOADER = {
-    'DEFAULT' : {
-        'BUNDLE_DIR_NAME' : 'bundles/',
-        'STATS_FILE' : os.path.join(BASE_DIR, 'webpack-stats.dev.json'),
-    }
-}
+# WEBPACK_LOADER = {
+#     'DEFAULT' : {
+#         'BUNDLE_DIR_NAME' : 'bundles/',
+#         'STATS_FILE' : os.path.join(BASE_DIR, 'webpack-stats.dev.json'),
+#     }
+# }
