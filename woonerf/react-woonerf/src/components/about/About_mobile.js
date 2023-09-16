@@ -22,7 +22,6 @@ const StyledMain = styled.div`
 // `
 
 const StyledLogo = styled.div`
-    text-align: center;
     background-color: #FFFFFF; 
     flex-direction: column;
     align-items: center;
