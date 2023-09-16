@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'About',
 ]
 
+
 #추가한 부분
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
@@ -57,6 +58,8 @@ REST_FRAMEWORK = {
 }
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",  # CORS 추가
+    "django.middleware.common.CommonMiddleware",  # CORS 추가
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -64,7 +67,6 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = "woonerf.urls"
