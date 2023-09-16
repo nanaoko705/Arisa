@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import Footer from '../footer/Footer';
 
 const StyledNavbar = styled.div`
     // background-color: #082710;
@@ -31,7 +32,6 @@ const StyledLogo = styled.div`
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-    margin-top: 20px;
 
     display: block;
     width : 100%;
@@ -68,19 +68,22 @@ const StyledNav = styled(Link)`
     /* 기타 */
     & + & {
     margin-top: 5rem;
-    }
+    }   
 
     font-family: var(--font-poppins);
 `;
 
 const Nav = (props) => (
+    <div>
     <StyledNavbar className="navbar" id="mainNav">
         <StyledLogo ClassName="MainLogo" id="mainLogo">
             <img src="./media/MainLogo/wnrf_green_black.jpeg" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
             {/* <a className="navbar-brand js-scroll-trigger" href="/" >Woonerf</a> */}
         </StyledLogo>
-
-        <div className="container">
+        <div className="container" style={{marginBottom:'10vh'}}>
+            <div className="front_img" style={{textAlign:'center'}}>
+                <img src="./media/nav/nav_img.jpeg" style={{width: '100%', marginBottom:'10vh'}} alt="대문 사진" />
+            </div>
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <StyledNav className="nav-item" to="/about">
                     {props.menu[0]}
@@ -97,6 +100,8 @@ const Nav = (props) => (
             </div>
         </div>
     </StyledNavbar> 
+    <Footer />
+    </div>
 )
 
 export default Nav;

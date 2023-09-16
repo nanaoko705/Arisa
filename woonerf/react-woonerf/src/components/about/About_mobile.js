@@ -29,8 +29,6 @@ const StyledLogo = styled.div`
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: black;
-    margin-top: 10%;
-    margin-bottom: 20%;
 
     display: block;
     width : 70%;
@@ -79,7 +77,7 @@ const About_mobile = () => {
         <StyledMain >
             <StyledLogo ClassName="MainLogo" id="mainLogo">
                 <SytledImage>    
-                    <img onClick={goMain} src="./media/MainLogo/wnrf_green_black.png" styled="max-width: 100%; height:auto;" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
+                    <img onClick={goMain} src="./media/MainLogo/wnrf_green_black.jpeg" style={{maxWidth: '100%', height:'auto'}} alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
                 </SytledImage>
             </StyledLogo>  
 
