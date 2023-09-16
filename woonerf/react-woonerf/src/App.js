@@ -36,7 +36,7 @@ function App() {
       {isTablet && <Route path="/about" element={<About_tablet />} />}
       {isPc && <Route path="/about" element={<About />} />}
 
-      {isMobile && <Route path="/class" element={<class_moblie />} />}
+      {isMobile && <Route path="/class" element={<Class_moblie />} />}
       {isTablet && <Route path="/class" element={<Class_tablet />} />}
       {isPc && <Route path="/class" element={<Class />} />}
       

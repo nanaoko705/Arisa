@@ -25,6 +25,7 @@ SECRET_KEY = "django-insecure-$@&ol85j_$d+d=&%!3!3r@%m9e-l&&)d(9k7+x7-%#!ddkght)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+# DEBUG = True
 
 ALLOWED_HOSTS = [
     'noyesa.pythonanywhere.com'
@@ -75,7 +76,7 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            os.path.join(BASE_DIR, 'react-woonerf/build'), # 경로 변경
+            os.path.join(BASE_DIR, 'static/build'), # 경로 변경
         ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -145,3 +146,5 @@ CORS_ALLOW_CREDENTIALS = True
 
 #DEBUD = False 할 경우 호스팅 고장나서, 모든 all로 설정해줌
 ALLOWED_HOSTS = ['*']
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static/build')]

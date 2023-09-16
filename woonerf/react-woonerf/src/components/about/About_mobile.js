@@ -29,8 +29,6 @@ const StyledLogo = styled.div`
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: black;
-    margin-top: 10%;
-    margin-bottom: 20%;
 
     display: block;
     width : 70%;
@@ -79,14 +77,14 @@ const About_mobile = () => {
         <StyledMain >
             <StyledLogo ClassName="MainLogo" id="mainLogo">
                 <SytledImage>    
-                    <img onClick={goMain} src="./media/MainLogo/wnrf_green_black.png" styled="max-width: 100%; height:auto;" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
+                    <img onClick={goMain} src="./media/MainLogo/wnrf_green_black.jpeg" style={{maxWidth: '100%', height:'auto'}} alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
                 </SytledImage>
             </StyledLogo>  
 
             {/* About 구현하기 */}
             <div className="intro" styled="width: 1200px; height:294px; overflow:hidden;">
                 <SytledImage>
-                    <img src="./media/about/about_img.png" alt="about" />
+                    <img src="./media/about/about_img1.jpeg" alt="about" />
                 </SytledImage>
                 <StyledText>
                     <h2>Korean Styled Modern Bonsai</h2>
@@ -103,7 +101,7 @@ const About_mobile = () => {
 
             <div className="crew1" styled="width: 1200px; overflow:hidden;">
                 <SytledImage>
-                    <img src="./media/about/crew_img1.jpg" alt="crew" />
+                    <img src="./media/about/about_img2.jpeg" alt="crew" />
                 </SytledImage>
                 <StyledText>
                     <h2>Woon Young Choi1</h2>
@@ -117,7 +115,7 @@ const About_mobile = () => {
             
             <div className="crew2" styled="width: 1200px; overflow:hidden;">
                 <SytledImage>
-                    <img src="./media/about/crew_img2.jpg" alt="crew" />
+                    <img src="./media/about/crew_img1.jpeg" alt="crew" />
                 </SytledImage>
                 <StyledText>
                     <h2>Woon Young Choi2</h2>
@@ -131,7 +129,7 @@ const About_mobile = () => {
 
             <div className="crew3" styled="width: 1200px; overflow:hidden;">
                 <SytledImage>
-                    <img src="./media/about/crew_img3.jpg" alt="crew" />
+                    <img src="./media/about/crew_img3.jpeg" alt="crew" />
                 </SytledImage>
                 <StyledText>
                     <h2>Woon Young Choi3</h2>
@@ -141,6 +139,7 @@ const About_mobile = () => {
                         2003년 MBC 드라마 위풍당당 그녀로 연기자로서 처음 모습을 드러냈다. 2004년 영화 그녀를 믿지마세요 에서 김하늘과 연인으로 호흡을 맞추며 스크린 데뷔하여, 같은 해 백상예술대상 인기상을 수상했다.
                     </p>
                 </StyledText>
+                
             </div>
         </StyledMain>
         <Footer/>
