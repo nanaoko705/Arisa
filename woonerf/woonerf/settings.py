@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'account',
     'board',
     'About',
+    'webpack_loader',
 ]
 
 
@@ -134,7 +135,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "/static/"
+STATIC_URL = "/django-static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -148,3 +149,10 @@ CORS_ALLOW_CREDENTIALS = True
 ALLOWED_HOSTS = ['*']
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static/build')]
+
+WEBPACK_LOADER = {
+    'DEFAULT' : {
+        'BUNDLE_DIR_NAME' : 'bundles/',
+        'STATS_FILE' : os.path.join(BASE_DIR, 'webpack-stats.dev.json'),
+    }
+}
