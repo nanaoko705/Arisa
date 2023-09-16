@@ -3,7 +3,10 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const StyledNavbar = styled.div`
-    background-color: #082710;
+    // background-color: #082710;
+    // background-color: #000000;
+    background-color: #FFFFFF;                        //배경 색상
+
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -16,7 +19,11 @@ const StyledNavbar = styled.div`
 const StyledLogo = styled.div`
     text-align: center;
     /* 우너프 배경색 */
-    background-color: #082710; 
+    // background-color: #082710; 
+
+    // background-color: #000000;
+    background-color: #ffffff;                          //배경 색상 Navbar를 따라가게 할 것
+
     /* min-height: 50vh; */
     /* display: flex; */
     flex-direction: column;
@@ -25,11 +32,13 @@ const StyledLogo = styled.div`
     font-size: calc(10px + 2vmin);
     color: white;
     margin-top: 20px;
-    margin-bottom: 80px;
 
     display: block;
     width : 100%;
     text-align : center;
+    img {
+        width : 100%;
+    }
 `
 
 const StyledNav = styled(Link)`
@@ -39,7 +48,11 @@ const StyledNav = styled(Link)`
     outline: none;
     border: none;
     border-radius: 4px;
-    color: #9b8355;
+
+    //color: #9b8355;
+    //color: #FFFFFF;
+    color: #000000;                                       //폰트 색상
+
     font-weight: bold;
     cursor: pointer;
     text-decoration-line: none;
@@ -47,7 +60,7 @@ const StyledNav = styled(Link)`
     /* 크기 */
     width: 100%;
     height: 2.25rem;
-    font-size: 2rem;
+    font-size: 1.25rem;
 
     /* 색상 */
     background: rgba(0,0,0,0);
@@ -63,7 +76,7 @@ const StyledNav = styled(Link)`
 const Nav = (props) => (
     <StyledNavbar className="navbar" id="mainNav">
         <StyledLogo ClassName="MainLogo" id="mainLogo">
-            <img src="./media/MainLogo/wnrf_green_gold.png" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
+            <img src="./media/MainLogo/wnrf_green_black.jpeg" alt="메인 로고입니다. 클릭하면 홈으로 돌아갑니다." />
             {/* <a className="navbar-brand js-scroll-trigger" href="/" >Woonerf</a> */}
         </StyledLogo>
 
