@@ -12,7 +12,12 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("user/", include('account.urls')),  # Comma was missing here
     path("blog/", include('board.urls')),
-    path('', TemplateView.as_view(template_name='index.html')), #??
+    path("class/",include('class.urls')),
+    path("about/",include('about.urls')),
+    path('api-auth/', include('rest_framework.urls')),
+    
+
+
     #re_path(r'^static/(?P<path>.*)$', serve),
     #re_path(r'^.*$', TemplateView.as_view(template_name='build/index.html')),
 ]  

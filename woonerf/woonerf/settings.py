@@ -24,12 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-$@&ol85j_$d+d=&%!3!3r@%m9e-l&&)d(9k7+x7-%#!ddkght)"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-# DEBUG = True
+DEBUG = True
 
-ALLOWED_HOSTS = [
-    'noyesa.pythonanywhere.com'
-]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -41,14 +38,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'rest_framework',    
-    'corsheaders',
+    'rest_framework', 
     'account',
     'board',
-    'About',
-    'webpack_loader',
+    'class',
+    'about',
 ]
-
 
 #추가한 부분
 REST_FRAMEWORK = {
@@ -60,8 +55,6 @@ REST_FRAMEWORK = {
 }
 
 MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware",  # CORS 추가
-    "django.middleware.common.CommonMiddleware",  # CORS 추가
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -76,9 +69,7 @@ ROOT_URLCONF = "woonerf.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [
-            os.path.join(BASE_DIR, 'django-static/build'), # 경로 변경
-        ],
+        "DIRS": [],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -135,24 +126,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "/django-static/"
+STATIC_URL = "/static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-CORS_ORIGIN_WHITELIST = ('http://127.0.0.1:3000', 'http://localhost:3000')
-CORS_ALLOW_CREDENTIALS = True
-
-#DEBUD = False 할 경우 호스팅 고장나서, 모든 all로 설정해줌
-ALLOWED_HOSTS = ['*']
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'django-static/build')]
-
-# WEBPACK_LOADER = {
-#     'DEFAULT' : {
-#         'BUNDLE_DIR_NAME' : 'bundles/',
-#         'STATS_FILE' : os.path.join(BASE_DIR, 'webpack-stats.dev.json'),
-#     }
-# }

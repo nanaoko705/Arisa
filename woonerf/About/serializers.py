@@ -6,4 +6,4 @@ class AboutSerializer(serializers.ModelSerializer):
     image = serializers.ImageField(use_url=True)
     class Meta:
         model = About
-        fields = ['id', 'user', 'body','image']
+        fields = ['id', 'title', 'created_at', 'user', 'body','image']

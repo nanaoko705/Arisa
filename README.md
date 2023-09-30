@@ -1,3 +1,3 @@
 # Arisa
 
-ms에 있는 react를 woonerf로 옮겨줘야함
+index.html에 네비게이션 바 수정하고, 아래로 내리기
