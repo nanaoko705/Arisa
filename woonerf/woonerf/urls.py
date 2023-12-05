@@ -20,5 +20,4 @@ urlpatterns = [
 
     #re_path(r'^static/(?P<path>.*)$', serve),
     #re_path(r'^.*$', TemplateView.as_view(template_name='build/index.html')),
-]  
-#+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
